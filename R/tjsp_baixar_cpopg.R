@@ -36,7 +36,7 @@ tjsp_baixar_cpopg1 <- function (processo = NULL, diretorio)
 
   httr::set_config(httr::config(ssl_verifypeer = FALSE))
 
-  uri1 <- "https://esaj.tjsp.jus.br/cpopg/open.do?gateway=true"
+  uri1 <- "https://esaj.tjsp.jus.br/cpopg/open.do?gateway=true" # Originalmente search.do
 
     unificado <- processo |>  stringr::str_extract(".{15}")
 
